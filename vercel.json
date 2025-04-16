@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "frank/wsgi.py",
+        "src": "unnupdate/wsgi.py",
         "use": "@vercel/python"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "frank/wsgi.py"
+        "dest": "unnupdate/wsgi.py"
       }
     ]
   }
