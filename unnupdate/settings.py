@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -365,3 +366,6 @@ EMAIL_PORT=465
 EMAIL_USE_SSL=True
 EMAIL_HOST_USER="donnelskid287@gmail.com"
 EMAIL_HOST_PASSWORD="zzbg nkey yykx fifg "
+
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage",
